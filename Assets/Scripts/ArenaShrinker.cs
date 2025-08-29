@@ -41,9 +41,11 @@ public class ArenaShrinker : NetworkBehaviour
         }
     }
 
-    [Server]
     private void OnDestroy()
     {
-        CustomNetworkManager.UnsubOnMaxClientsWereConnected(StartIReduce);
+        if (NetworkServer.active)
+        {
+            CustomNetworkManager.UnsubOnMaxClientsWereConnected(StartIReduce);
+        }
     }
 }
