@@ -337,13 +337,13 @@
         <HintPath>D:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Rocks">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>D:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>

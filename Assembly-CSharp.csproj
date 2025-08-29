@@ -43,6 +43,7 @@
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
      <Compile Include="Assets\InputSystem\InputActions.cs" />
+     <Compile Include="Assets\Scripts\NetworkManager\CustomNetworkManager.cs" />
      <Compile Include="Assets\Scripts\ArenaShrinker.cs" />
      <None Include="Assets\ScriptTemplates\52-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
      <None Include="Assets\Mirror\version.txt" />
@@ -308,22 +309,22 @@
         <HintPath>D:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mirror.BouncyCastle.Cryptography">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Assets\Mirror\Transports\Encryption\Plugins\BouncyCastle\Mirror.BouncyCastle.Cryptography.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Assets\Mirror\Transports\Encryption\Plugins\BouncyCastle\Mirror.BouncyCastle.Cryptography.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Pdb">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Rocks">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>D:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -692,64 +693,64 @@
         <HintPath>D:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-        <HintPath>D:\Program Data\unity_progects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

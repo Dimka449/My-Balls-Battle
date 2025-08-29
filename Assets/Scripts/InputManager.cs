@@ -4,7 +4,7 @@ public class InputManager : MonoBehaviour
 {
     public static InputManager Instance { get; private set; }
 
-    private Player _player;
+    public Vector3 movementVector;
     private InputActions _inputActions;
 
     private void Awake()
@@ -14,19 +14,14 @@ public class InputManager : MonoBehaviour
         _inputActions.Enable();
     }
 
-    public void SetPlayer(Player player)
+    private void Update()
     {
-        _player = player;
+        movementVector = GetMovementVector();
     }
 
-    private Vector2 GetMovementVector()
+    private Vector3 GetMovementVector()
     {
-        Vector2 inputVector = _inputActions.BallFight.Move.ReadValue<Vector2>();
+        Vector3 inputVector = _inputActions.BallFight.Move.ReadValue<Vector3>();
         return inputVector;
-    }
-
-    private void StartMovePlayer()
-    {
-
     }
 }
