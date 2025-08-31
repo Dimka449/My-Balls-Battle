@@ -11,13 +11,13 @@ public class ArenaShrinker : NetworkBehaviour
 
     private Coroutine _currentCoroutine;
 
-    [Server]
+    [ServerCallback]
     private void Awake()
     {
         transform.localScale = startScale;
     }
 
-    [Server]
+    [ServerCallback]
     private void Start()
     {
         CustomNetworkManager.SubOnMaxClientsWereConnected(StartIReduce);
@@ -33,7 +33,7 @@ public class ArenaShrinker : NetworkBehaviour
     [Server]
     private IEnumerator IReduce()
     {
-        while (targetRadius < transform.localScale.x)
+        while (transform.localScale.x > targetRadius)
         {
             Vector3 localScale = transform.localScale;
             transform.localScale = new Vector3(localScale.x -= reductionStep, localScale.y, localScale.z -= reductionStep);
@@ -41,9 +41,12 @@ public class ArenaShrinker : NetworkBehaviour
         }
     }
 
-    [Server]
+    [ServerCallback]
     private void OnDestroy()
     {
-        CustomNetworkManager.UnsubOnMaxClientsWereConnected(StartIReduce);
+        if (NetworkServer.active)
+        {
+            CustomNetworkManager.UnsubOnMaxClientsWereConnected(StartIReduce);
+        }
     }
 }
