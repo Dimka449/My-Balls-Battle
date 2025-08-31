@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telepathy", "Telepathy.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebTransport", "SimpleWebTransport.csproj", "{3e0d9860-538b-512f-091d-761af0f06e7d}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParrelSync", "ParrelSync.csproj", "{0c435bb0-4663-552a-0e75-61a068d25cef}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kcp2k", "kcp2k.csproj", "{225e9cef-2012-001b-3d99-54cefdc5f6a1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{4aacf058-185e-a6b1-d9cf-2ab92e4b40d4}"
@@ -54,6 +56,8 @@ Global
 		{57a9d895-89d2-3528-7d8e-5663d99b93bb}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3e0d9860-538b-512f-091d-761af0f06e7d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3e0d9860-538b-512f-091d-761af0f06e7d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0c435bb0-4663-552a-0e75-61a068d25cef}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0c435bb0-4663-552a-0e75-61a068d25cef}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{225e9cef-2012-001b-3d99-54cefdc5f6a1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{225e9cef-2012-001b-3d99-54cefdc5f6a1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4aacf058-185e-a6b1-d9cf-2ab92e4b40d4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

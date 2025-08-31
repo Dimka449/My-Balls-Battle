@@ -29,13 +29,10 @@ public class Player : NetworkBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 vector = _inputManager.movementVector;
-        if (isServer)
-        {
-            ServerMovingPlayer(vector);
-        }
         if (isLocalPlayer)
         {
+            Vector3 vector = _inputManager.movementVector;
+            CmdMovingPlayer(vector);
             MovingPlayer(vector);
         }
     }
@@ -44,8 +41,8 @@ public class Player : NetworkBehaviour
         _inputManager = InputManager.Instance;
     }
 
-    [Server]
-    private void ServerMovingPlayer(Vector3 vector)
+    [Command]
+    private void CmdMovingPlayer(Vector3 vector)
     {
         _rb.AddForce(vector.normalized * _moveForceMagnitude, ForceMode.Force);
     }
