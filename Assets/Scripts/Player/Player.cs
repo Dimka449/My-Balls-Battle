@@ -7,8 +7,10 @@ public class Player : NetworkBehaviour
 
     [SyncVar] private float _moveForceMagnitude;
 
+    private Vector3 _movementVector;
     private Rigidbody _rb;
     private InputManager _inputManager;
+    private Transform _cameraPivotTransform;
 
     private void Awake()
     {
@@ -25,17 +27,29 @@ public class Player : NetworkBehaviour
         {
             _moveForceMagnitude = moveForceMagnitude;
         }
+        CameraPivot.OnSpawnPlayer += GetCurrentCameraTransform;
+    }
+
+    private void Update()
+    {
+        if (_cameraPivotTransform == null) return;
+        _movementVector = Quaternion.Euler(0, _cameraPivotTransform.localRotation.eulerAngles.y, 0) * _inputManager.GetMovementVector();
     }
 
     private void FixedUpdate()
     {
         if (isLocalPlayer)
         {
-            Vector3 vector = _inputManager.movementVector;
-            CmdMovingPlayer(vector);
-            MovingPlayer(vector);
+            CmdMovingPlayer(_movementVector);
+            MovingPlayer(_movementVector);
         }
     }
+
+    private void GetCurrentCameraTransform(Transform transform)
+    {
+        _cameraPivotTransform = transform;
+    }
+
     private void SetInputManager()
     {
         _inputManager = InputManager.Instance;
@@ -50,5 +64,10 @@ public class Player : NetworkBehaviour
     private void MovingPlayer(Vector3 vector)
     {
         _rb.AddForce(vector.normalized * _moveForceMagnitude, ForceMode.Force);
+    }
+
+    private void OnDestroy()
+    {
+        CameraPivot.OnSpawnPlayer -= GetCurrentCameraTransform;
     }
 }
