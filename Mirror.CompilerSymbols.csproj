@@ -306,6 +306,9 @@
     <Reference Include="Mono.CecilX">
         <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
+    <Reference Include="Zenject-usage">
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.CecilX.Mdb">
         <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
@@ -327,14 +330,23 @@
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
         <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Library\PackageCache\com.unity.collab-proxy@2.0.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Library\PackageCache\com.unity.collab-proxy@2.0.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
         <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Rocks">
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
@@ -344,6 +356,9 @@
     </Reference>
     <Reference Include="unityplastic">
         <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Library\PackageCache\com.unity.collab-proxy@2.0.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
+        <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>D:\Program Data\unity_progects\Projects\My-Balls-Battle-Multiplier\My-Balls-Battle\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

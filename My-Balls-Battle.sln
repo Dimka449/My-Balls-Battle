@@ -17,9 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Transports", "Mirror
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Components", "Mirror.Components.csproj", "{9b208da0-4150-e027-7ff0-29bace464486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mirror.CodeGen", "Unity.Mirror.CodeGen.csproj", "{7d256259-baf6-3fa0-d286-cf13713792d6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-IntegrationTests-Editor", "Zenject-IntegrationTests-Editor.csproj", "{33b7ad8f-f0d1-b6b8-1f15-24401c8a8c1a}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mirror.CodeGen", "Unity.Mirror.CodeGen.csproj", "{7d256259-baf6-3fa0-d286-cf13713792d6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-ReflectionBaking-Editor", "Zenject-ReflectionBaking-Editor.csproj", "{13038d1d-eb39-f895-878d-538a5e781511}"
 EndProject
@@ -70,10 +70,10 @@ Global
 		{94c40df2-1c71-b966-34a7-c76c3661af65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9b208da0-4150-e027-7ff0-29bace464486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9b208da0-4150-e027-7ff0-29bace464486}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7d256259-baf6-3fa0-d286-cf13713792d6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7d256259-baf6-3fa0-d286-cf13713792d6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33b7ad8f-f0d1-b6b8-1f15-24401c8a8c1a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{33b7ad8f-f0d1-b6b8-1f15-24401c8a8c1a}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7d256259-baf6-3fa0-d286-cf13713792d6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7d256259-baf6-3fa0-d286-cf13713792d6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13038d1d-eb39-f895-878d-538a5e781511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{13038d1d-eb39-f895-878d-538a5e781511}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01ed9c0f-ce7e-a608-c4bb-476ea4262d83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
