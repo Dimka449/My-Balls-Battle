@@ -6,7 +6,7 @@ public class CameraPivot : NetworkBehaviour
 {
     [SerializeField] private float verticalRotateSpeed = 2f;
     [SerializeField] private float horizontalRotateSpeed = 3f;
-    [SerializeField][Range(0.01f, 1f)] private float rotationSmoothness = 0.95f;
+    [SerializeField][Range(0.01f, 1f)] private float rotationSmoothness = 0.9f;
     [SerializeField][Range(0.01f, 1f)] private float smoothnessOfFollowing = 0.9f;
     [SerializeField] private float verticalMinAngle = 0f;
     [SerializeField] private float verticalMaxAngle = 85f;

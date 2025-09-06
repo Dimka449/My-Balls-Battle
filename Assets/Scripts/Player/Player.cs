@@ -32,6 +32,7 @@ public class Player : NetworkBehaviour
 
     private void Update()
     {
+        if (!isLocalPlayer) return;
         if (_cameraPivotTransform == null) return;
         _movementVector = Quaternion.Euler(0, _cameraPivotTransform.localRotation.eulerAngles.y, 0) * _inputManager.GetMovementVector();
     }

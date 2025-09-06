@@ -42,10 +42,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\InputManager\InputManager.cs" />
      <Compile Include="Assets\Scripts\Arena\ArenaShrinker.cs" />
+     <Compile Include="Assets\Scripts\Arena\BorderCreater.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraPivot.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraDistanceController.cs" />
-     <Compile Include="Assets\Scripts\Arena\CylinderBorder.cs" />
      <Compile Include="Assets\InputSystem\InputActions.cs" />
      <Compile Include="Assets\Scripts\NetworkManager\CustomNetworkManager.cs" />
      <None Include="Assets\ScriptTemplates\52-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
