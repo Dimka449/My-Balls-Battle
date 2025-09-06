@@ -35,6 +35,24 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""PivotRotation"",
+                    ""type"": ""Value"",
+                    ""id"": ""2a9c8bf8-5161-40e9-bdf5-19506b2d82e5"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""CameraDistance"",
+                    ""type"": ""Value"",
+                    ""id"": ""e3feaf36-966a-4fbe-a081-742e705892ae"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -114,6 +132,94 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""51a0f759-c752-4ab5-a674-0dd8b56f0b00"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraDistance"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""77678f79-0791-4838-9e44-44cb7913e048"",
+                    ""path"": ""<Mouse>/scroll/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraDistance"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""cab432e0-3683-4d44-8718-3840fdfd21fc"",
+                    ""path"": ""<Mouse>/scroll/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraDistance"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""c4413c75-acab-4f64-91bf-e4aed078eb13"",
+                    ""path"": ""2DVector(mode=2)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PivotRotation"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""51fe41a9-f0e7-46b4-b654-affb832ce649"",
+                    ""path"": ""<Mouse>/delta/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PivotRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""4bb52c3b-8766-44b8-85c1-142eb03d10ca"",
+                    ""path"": ""<Mouse>/delta/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PivotRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""144b52e3-2a33-4a0d-b7e1-73ab21c44b6c"",
+                    ""path"": ""<Mouse>/delta/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PivotRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""ba780944-0f2d-435e-8258-3d2eb6c25612"",
+                    ""path"": ""<Mouse>/delta/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PivotRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -123,6 +229,8 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         // BallFight
         m_BallFight = asset.FindActionMap("BallFight", throwIfNotFound: true);
         m_BallFight_Move = m_BallFight.FindAction("Move", throwIfNotFound: true);
+        m_BallFight_PivotRotation = m_BallFight.FindAction("PivotRotation", throwIfNotFound: true);
+        m_BallFight_CameraDistance = m_BallFight.FindAction("CameraDistance", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -185,11 +293,15 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_BallFight;
     private List<IBallFightActions> m_BallFightActionsCallbackInterfaces = new List<IBallFightActions>();
     private readonly InputAction m_BallFight_Move;
+    private readonly InputAction m_BallFight_PivotRotation;
+    private readonly InputAction m_BallFight_CameraDistance;
     public struct BallFightActions
     {
         private @InputActions m_Wrapper;
         public BallFightActions(@InputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_BallFight_Move;
+        public InputAction @PivotRotation => m_Wrapper.m_BallFight_PivotRotation;
+        public InputAction @CameraDistance => m_Wrapper.m_BallFight_CameraDistance;
         public InputActionMap Get() { return m_Wrapper.m_BallFight; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -202,6 +314,12 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
+            @PivotRotation.started += instance.OnPivotRotation;
+            @PivotRotation.performed += instance.OnPivotRotation;
+            @PivotRotation.canceled += instance.OnPivotRotation;
+            @CameraDistance.started += instance.OnCameraDistance;
+            @CameraDistance.performed += instance.OnCameraDistance;
+            @CameraDistance.canceled += instance.OnCameraDistance;
         }
 
         private void UnregisterCallbacks(IBallFightActions instance)
@@ -209,6 +327,12 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
+            @PivotRotation.started -= instance.OnPivotRotation;
+            @PivotRotation.performed -= instance.OnPivotRotation;
+            @PivotRotation.canceled -= instance.OnPivotRotation;
+            @CameraDistance.started -= instance.OnCameraDistance;
+            @CameraDistance.performed -= instance.OnCameraDistance;
+            @CameraDistance.canceled -= instance.OnCameraDistance;
         }
 
         public void RemoveCallbacks(IBallFightActions instance)
@@ -229,5 +353,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     public interface IBallFightActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnPivotRotation(InputAction.CallbackContext context);
+        void OnCameraDistance(InputAction.CallbackContext context);
     }
 }
